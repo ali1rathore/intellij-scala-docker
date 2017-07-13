@@ -31,7 +31,14 @@
                -v /tmp/.X11-unix:/tmp/.X11-unix \
                --name intellij \
                intellij-scala \
-               intellij
+               /bin/bash
+
+    Inside the container, install and run intellij or pycharm
+      
+        /opt/local/bin/install-intellij.sh
+        /opt/local/bin/install-pycharm.sh
+
+        now run pycharm or intellij via command line
 
 2. The next time
 
