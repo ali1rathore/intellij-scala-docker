@@ -68,6 +68,7 @@ RUN alias sbt="sbt -Dsbt.boot.directory=${SBT_STUFF}/boot -Dsbt.ivy.home=${SBT_S
 RUN sbt
 
 # add scripts to install intellij and plugins
-ADD ./install_intellij.sh /usr/local/bin/install_intellij.sh
-ADD ./start_intellij.sh /usr/local/bin/intellij
+ADD ./install-intellij.sh /usr/local/bin/install-intellij.sh
+ADD ./start-intellij.sh /usr/local/bin/intellij
 
+ADD ./install-pycharm.sh /usr/local/bin/install-pycharm.sh
